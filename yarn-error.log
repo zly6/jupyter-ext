@@ -1,0 +1,71 @@
+Arguments: 
+  F:\zly\work\jupyter\lab1\node.EXE F:\zly\work\jupyter\lab1\lib\site-packages\jupyterlab\staging\yarn.js install
+
+PATH: 
+  F:\zly\work\jupyter\lab1;F:\zly\work\jupyter\lab1\Library\mingw-w64\bin;F:\zly\work\jupyter\lab1\Library\usr\bin;F:\zly\work\jupyter\lab1\Library\bin;F:\zly\work\jupyter\lab1\Scripts;F:\zly\work\jupyter\lab1\bin;C:\ProgramData\Anaconda3\condabin;D:\Program Files (x86)\Ruby22-x64\bin;C:\Python27;C:\Python27\Scripts;C:\ProgramData\Boxstarter;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0;C:\Windows\System32\OpenSSH;D:\Program Files (x86)\nodejs;C:\ProgramData\chocolatey\bin;C:\Users\Administrator\AppData\Local\Microsoft\WindowsApps;C:\Users\Administrator\AppData\Roaming\npm;D:\Program Files (x86)\postgresql\bin;C:\PropgramData\Anaconda3;.;F:\zly\work\jupyter\lab1\lib\site-packages\pywin32_system32
+
+Yarn version: 
+  1.15.2
+
+Node version: 
+  12.11.1
+
+Platform: 
+  win32 x64
+
+Trace: 
+  Error: EPERM: operation not permitted, unlink 'C:\Users\Administrator\AppData\Local\Yarn\Cache\v4\npm-@jupyterlab-services-4.1.1-5071c317461cb1f318b2fdd5e3f175281d5c8399\node_modules\@jupyterlab\services\.yarn-tarball.tgz'
+
+npm manifest: 
+  {
+    "name": "jupyter-ext",
+    "version": "0.1.0",
+    "description": "Show a random NASA Astronomy pricture test",
+    "keywords": [
+      "jupyter",
+      "jupyterlab",
+      "jupyterlab-extension"
+    ],
+    "homepage": "https://github.com/zly6/jupyter-ext",
+    "bugs": {
+      "url": "https://github.com/zly6/jupyter-ext/issues"
+    },
+    "license": "BSD-3-Clause",
+    "author": "zly",
+    "files": [
+      "lib/**/*.{d.ts,eot,gif,html,jpg,js,js.map,json,png,svg,woff2,ttf}",
+      "style/**/*.{css,eot,gif,html,jpg,json,png,svg,woff2,ttf}"
+    ],
+    "main": "lib/index.js",
+    "types": "lib/index.d.ts",
+    "style": "style/index.css",
+    "repository": {
+      "type": "git",
+      "url": "https://github.com/zly6/jupyter-ext.git"
+    },
+    "scripts": {
+      "build": "tsc",
+      "clean": "rimraf lib && rimraf tsconfig.tsbuildinfo",
+      "prepare": "npm run clean && npm run build",
+      "watch": "tsc -w"
+    },
+    "dependencies": {
+      "@jupyterlab/application": "^1.0.0"
+    },
+    "devDependencies": {
+      "rimraf": "^2.6.1",
+      "typescript": "~3.5.2"
+    },
+    "sideEffects": [
+      "style/*.css"
+    ],
+    "jupyterlab": {
+      "extension": true
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
